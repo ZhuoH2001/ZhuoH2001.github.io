@@ -1,6 +1,7 @@
 body {
-  background-image: url("assets/images/bg.jpg");
+  background-image: url("../assets/images/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
 }
