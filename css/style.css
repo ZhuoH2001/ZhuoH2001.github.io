@@ -191,6 +191,12 @@ h3 { margin-bottom: 7px; font-size: 1.38rem; font-weight: normal; }
 .project-divider {
   display: none;
 }
+.project-inline-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
 .project-inline {
   color: var(--ink);
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -202,6 +208,7 @@ h3 { margin-bottom: 7px; font-size: 1.38rem; font-weight: normal; }
   font-size: 0.72rem;
   font-weight: normal;
   letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 .project-link, .project-inline {
   display: inline-block;
