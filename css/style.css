@@ -36,11 +36,11 @@ a { color: inherit; }
 
 .page-robot-wrap {
   position: absolute;
-  top: 12px;
-  right: 0;
+  top: 18px;
+  right: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0;
   z-index: 2;
 }
 
@@ -49,6 +49,7 @@ a { color: inherit; }
   width: 220px;
   max-width: 24vw;
   height: auto;
+  margin-left: -42px;
   opacity: 0.96;
   pointer-events: none;
 }
@@ -56,34 +57,25 @@ a { color: inherit; }
 .speech-bubble {
   position: relative;
   order: 1;
-  padding: 8px 12px;
-  border: 1px solid rgba(123, 150, 200, 0.55);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 2px 8px rgba(32, 36, 40, 0.04);
+  width: 300px;
+  height: 100px;
+  margin-right: -48px;
+  display: block;
+  overflow: visible;
+  filter: drop-shadow(0 8px 18px rgba(155, 171, 220, 0.08));
 }
 
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  border-top: 1px solid rgba(123, 150, 200, 0.55);
-  border-right: 1px solid rgba(123, 150, 200, 0.55);
-  background: rgba(255, 255, 255, 0.72);
-  transform: translateY(-50%) rotate(45deg);
+.speech-bubble path {
+  fill: rgba(249, 245, 255, 0.9);
+  stroke: rgba(156, 174, 226, 0.8);
+  stroke-width: 1.2;
 }
 
-.robot-greeting {
-  margin: 0;
-  color: var(--accent);
+.robot-greeting-svg {
+  fill: var(--accent);
   font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: none;
-  white-space: nowrap;
+  font-size: 16px;
+  letter-spacing: 0.01em;
 }
 
 .hero {
